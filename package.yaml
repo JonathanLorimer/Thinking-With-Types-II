@@ -37,6 +37,8 @@ default-extensions:
   - TypeOperators
   - TypeFamilies
   - NoImplicitPrelude
+  - PolyKinds
+  - BlockArguments
 
 library:
   source-dirs: src

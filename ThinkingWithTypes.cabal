@@ -21,6 +21,7 @@ source-repository head
 library
   exposed-modules:
       CH2
+      CH3
   hs-source-dirs:
       src
   default-extensions:
@@ -35,6 +36,8 @@ library
       TypeOperators
       TypeFamilies
       NoImplicitPrelude
+      PolyKinds
+      BlockArguments
   ghc-options: -Weverything -Wno-missing-exported-signatures -Wno-missing-export-lists -Wno-missing-import-lists -Wno-missed-specialisations -Wno-all-missed-specialisations -Wno-unsafe -Wno-prepositive-qualified-module -Wno-missing-local-signatures -Wno-monomorphism-restriction -Wno-missing-deriving-strategies -fdiagnostics-color=always +RTS -A128m -n2m -RTS
   build-depends:
       base >=4.9 && <5
