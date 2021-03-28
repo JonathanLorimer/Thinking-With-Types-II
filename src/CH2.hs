@@ -27,12 +27,12 @@ type family Map (x :: a -> b) (i :: [a]) :: [b] where
 -- This is not very useful because `Even` is not fully applied here
 -- `Map Even '[1,2,3,4,5,6,7,8,9,10]`
 
--- $> :set -XDataKinds
+---- $> :set -XDataKinds
 --
--- $> import CH2
+---- $> import CH2
 --
--- $> import Prelude
+---- $> import Prelude
 --
--- $> :kind! (Not ('True `And` 'True))
+---- $> :kind! (Not ('True `And` 'True))
 --
--- $> :kind! (Even 1000000000000000000001)
+---- $> :kind! (Even 1000000000000000000001)

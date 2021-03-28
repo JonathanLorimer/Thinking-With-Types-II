@@ -34,11 +34,16 @@ default-extensions:
   - MultiWayIf
   - InstanceSigs
   - DataKinds
+  - ConstraintKinds
   - TypeOperators
   - TypeFamilies
+  - TypeApplications
+  - UndecidableInstances
+  - GADTs
   - NoImplicitPrelude
   - PolyKinds
   - BlockArguments
+  - FlexibleInstances
 
 library:
   source-dirs: src
